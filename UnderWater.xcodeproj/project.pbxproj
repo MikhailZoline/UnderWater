@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741D4C132156ABF800CF56EA /* Mesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C052156ABF600CF56EA /* Mesh.mm */; };
+		741D4C152156ABF800CF56EA /* geomutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C072156ABF700CF56EA /* geomutils.c */; };
+		741D4C162156ABF800CF56EA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C082156ABF700CF56EA /* main.cpp */; };
+		741D4C172156ABF800CF56EA /* swim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C0B2156ABF700CF56EA /* swim.cpp */; };
+		741D4C182156ABF800CF56EA /* kumanomi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C0C2156ABF700CF56EA /* kumanomi.cpp */; };
+		741D4C192156ABF800CF56EA /* shark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C0D2156ABF700CF56EA /* shark.cpp */; };
+		741D4C1A2156ABF800CF56EA /* tang.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C0E2156ABF700CF56EA /* tang.cpp */; };
+		741D4C4C2157F30400CF56EA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D4C4B2157F30400CF56EA /* OpenGL.framework */; };
+		741D4C4E2157F30C00CF56EA /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741D4C4D2157F30C00CF56EA /* GLUT.framework */; };
+		742C6B3A215AC2C6000A5029 /* BlueTangTS.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = 742C6B35215AC29E000A5029 /* BlueTangTS.raw */; };
+		742C6B3C215AC2C6000A5029 /* KumanomiTS.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = 742C6B34215AC29E000A5029 /* KumanomiTS.raw */; };
+		742C6B3E215AC2C6000A5029 /* LeopardSharkTS.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = 742C6B36215AC29E000A5029 /* LeopardSharkTS.raw */; };
+		7435BDDD215979BE00996C2A /* 3dmodel.h in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C0A2156ABF700CF56EA /* 3dmodel.h */; };
+		7435BDDE215979BE00996C2A /* atlantis.h in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C032156ABF600CF56EA /* atlantis.h */; };
+		7435BDDF215979BE00996C2A /* geomutils.h in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C0F2156ABF700CF56EA /* geomutils.h */; };
+		7435BDE0215979BE00996C2A /* Mesh.h in Sources */ = {isa = PBXBuildFile; fileRef = 741D4C092156ABF700CF56EA /* Mesh.h */; };
+		7445AACF2186AAD600470E91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7445AACE2186AAD500470E91 /* Foundation.framework */; };
+		7445AAD12186B1CC00470E91 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7445AACC2186A5F500470E91 /* Cocoa.framework */; };
+		7445AB0A2186C4AF00470E91 /* UnderWater-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7445AB092186C4AF00470E91 /* UnderWater-Info.plist */; };
+		7445AB132186C6A400470E91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7445AB122186C6A400470E91 /* AppDelegate.m */; };
+		7445AB152186C6B800470E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7445AB142186C6B800470E91 /* Assets.xcassets */; };
+		7445AB182186C6B900470E91 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7445AB162186C6B900470E91 /* MainMenu.xib */; };
+		7445AB1B2186C6B900470E91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7445AB1A2186C6B900470E91 /* main.m */; };
+		744809372192204C00F2184C /* BlueTaT.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7445AAD22186B38800470E91 /* BlueTaT.jpg */; };
+		744809382192205B00F2184C /* KumanoT.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7445AAD32186B38800470E91 /* KumanoT.jpg */; };
+		744809392192205F00F2184C /* LeoparT.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7445AAD42186B38800470E91 /* LeoparT.jpg */; };
+		744809542192455900F2184C /* BlueTaT.bmp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 744809442192448200F2184C /* BlueTaT.bmp */; };
+		744809552192455900F2184C /* KumanoT.bmp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 744809422192448200F2184C /* KumanoT.bmp */; };
+		74480964219246B700F2184C /* LeoparT.bmp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74480961219246A000F2184C /* LeoparT.bmp */; };
+		74480965219246B700F2184C /* SAND1.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74480960219246A000F2184C /* SAND1.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		741D4BF72156AB3700CF56EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				74480964219246B700F2184C /* LeoparT.bmp in CopyFiles */,
+				74480965219246B700F2184C /* SAND1.jpg in CopyFiles */,
+				744809542192455900F2184C /* BlueTaT.bmp in CopyFiles */,
+				744809552192455900F2184C /* KumanoT.bmp in CopyFiles */,
+				744809382192205B00F2184C /* KumanoT.jpg in CopyFiles */,
+				744809392192205F00F2184C /* LeoparT.jpg in CopyFiles */,
+				744809372192204C00F2184C /* BlueTaT.jpg in CopyFiles */,
+				742C6B3A215AC2C6000A5029 /* BlueTangTS.raw in CopyFiles */,
+				742C6B3C215AC2C6000A5029 /* KumanomiTS.raw in CopyFiles */,
+				742C6B3E215AC2C6000A5029 /* LeopardSharkTS.raw in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		741D4BF92156AB3700CF56EA /* UnderWater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnderWater; sourceTree = BUILT_PRODUCTS_DIR; };
+		741D4C032156ABF600CF56EA /* atlantis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atlantis.h; sourceTree = "<group>"; };
+		741D4C052156ABF600CF56EA /* Mesh.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Mesh.mm; sourceTree = "<group>"; };
+		741D4C072156ABF700CF56EA /* geomutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geomutils.c; sourceTree = "<group>"; };
+		741D4C082156ABF700CF56EA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		741D4C092156ABF700CF56EA /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		741D4C0A2156ABF700CF56EA /* 3dmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3dmodel.h; sourceTree = "<group>"; };
+		741D4C0B2156ABF700CF56EA /* swim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swim.cpp; sourceTree = "<group>"; };
+		741D4C0C2156ABF700CF56EA /* kumanomi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kumanomi.cpp; sourceTree = "<group>"; };
+		741D4C0D2156ABF700CF56EA /* shark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shark.cpp; sourceTree = "<group>"; };
+		741D4C0E2156ABF700CF56EA /* tang.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tang.cpp; sourceTree = "<group>"; };
+		741D4C0F2156ABF700CF56EA /* geomutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geomutils.h; sourceTree = "<group>"; };
+		741D4C4B2157F30400CF56EA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		741D4C4D2157F30C00CF56EA /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		742C6B34215AC29E000A5029 /* KumanomiTS.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KumanomiTS.raw; sourceTree = "<group>"; };
+		742C6B35215AC29E000A5029 /* BlueTangTS.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlueTangTS.raw; sourceTree = "<group>"; };
+		742C6B36215AC29E000A5029 /* LeopardSharkTS.raw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeopardSharkTS.raw; sourceTree = "<group>"; };
+		7445AAC82184FB0F00470E91 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7445AACC2186A5F500470E91 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7445AACE2186AAD500470E91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7445AAD22186B38800470E91 /* BlueTaT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlueTaT.jpg; sourceTree = "<group>"; };
+		7445AAD32186B38800470E91 /* KumanoT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KumanoT.jpg; sourceTree = "<group>"; };
+		7445AAD42186B38800470E91 /* LeoparT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LeoparT.jpg; sourceTree = "<group>"; };
+		7445AB092186C4AF00470E91 /* UnderWater-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnderWater-Info.plist"; sourceTree = "<group>"; };
+		7445AB0F2186C6A400470E91 /* UnderWaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderWaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7445AB112186C6A400470E91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7445AB122186C6A400470E91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7445AB142186C6B800470E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7445AB172186C6B900470E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7445AB192186C6B900470E91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7445AB1A2186C6B900470E91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7445AB1C2186C6B900470E91 /* UnderWaterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnderWaterApp.entitlements; sourceTree = "<group>"; };
+		744809422192448200F2184C /* KumanoT.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = KumanoT.bmp; sourceTree = "<group>"; };
+		744809442192448200F2184C /* BlueTaT.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = BlueTaT.bmp; sourceTree = "<group>"; };
+		74480960219246A000F2184C /* SAND1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SAND1.jpg; sourceTree = "<group>"; };
+		74480961219246A000F2184C /* LeoparT.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = LeoparT.bmp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		741D4BF62156AB3700CF56EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7445AAD12186B1CC00470E91 /* Cocoa.framework in Frameworks */,
+				7445AACF2186AAD600470E91 /* Foundation.framework in Frameworks */,
+				741D4C4E2157F30C00CF56EA /* GLUT.framework in Frameworks */,
+				741D4C4C2157F30400CF56EA /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7445AB0C2186C6A400470E91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741D4BF02156AB3700CF56EA = {
+			isa = PBXGroup;
+			children = (
+				741D4BFB2156AB3700CF56EA /* UnderWater */,
+				7445AB102186C6A400470E91 /* UnderWaterApp */,
+				741D4BFA2156AB3700CF56EA /* Products */,
+				741D4C4A2157F30400CF56EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		741D4BFA2156AB3700CF56EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741D4BF92156AB3700CF56EA /* UnderWater */,
+				7445AB0F2186C6A400470E91 /* UnderWaterApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		741D4BFB2156AB3700CF56EA /* UnderWater */ = {
+			isa = PBXGroup;
+			children = (
+				741D4C83215973DC00CF56EA /* Resources */,
+				741D4C082156ABF700CF56EA /* main.cpp */,
+				741D4C0A2156ABF700CF56EA /* 3dmodel.h */,
+				741D4C032156ABF600CF56EA /* atlantis.h */,
+				741D4C072156ABF700CF56EA /* geomutils.c */,
+				741D4C0F2156ABF700CF56EA /* geomutils.h */,
+				741D4C0C2156ABF700CF56EA /* kumanomi.cpp */,
+				741D4C052156ABF600CF56EA /* Mesh.mm */,
+				741D4C092156ABF700CF56EA /* Mesh.h */,
+				741D4C0D2156ABF700CF56EA /* shark.cpp */,
+				741D4C0B2156ABF700CF56EA /* swim.cpp */,
+				741D4C0E2156ABF700CF56EA /* tang.cpp */,
+			);
+			path = UnderWater;
+			sourceTree = "<group>";
+		};
+		741D4C4A2157F30400CF56EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7445AACE2186AAD500470E91 /* Foundation.framework */,
+				7445AACC2186A5F500470E91 /* Cocoa.framework */,
+				7445AAC82184FB0F00470E91 /* CoreFoundation.framework */,
+				741D4C4D2157F30C00CF56EA /* GLUT.framework */,
+				741D4C4B2157F30400CF56EA /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		741D4C83215973DC00CF56EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7445AAD82186BB2100470E91 /* Images */,
+				742C6B35215AC29E000A5029 /* BlueTangTS.raw */,
+				742C6B34215AC29E000A5029 /* KumanomiTS.raw */,
+				742C6B36215AC29E000A5029 /* LeopardSharkTS.raw */,
+				7445AB092186C4AF00470E91 /* UnderWater-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7445AAD82186BB2100470E91 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				74480961219246A000F2184C /* LeoparT.bmp */,
+				74480960219246A000F2184C /* SAND1.jpg */,
+				744809442192448200F2184C /* BlueTaT.bmp */,
+				744809422192448200F2184C /* KumanoT.bmp */,
+				7445AAD22186B38800470E91 /* BlueTaT.jpg */,
+				7445AAD32186B38800470E91 /* KumanoT.jpg */,
+				7445AAD42186B38800470E91 /* LeoparT.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7445AB102186C6A400470E91 /* UnderWaterApp */ = {
+			isa = PBXGroup;
+			children = (
+				7445AB112186C6A400470E91 /* AppDelegate.h */,
+				7445AB122186C6A400470E91 /* AppDelegate.m */,
+				7445AB142186C6B800470E91 /* Assets.xcassets */,
+				7445AB162186C6B900470E91 /* MainMenu.xib */,
+				7445AB192186C6B900470E91 /* Info.plist */,
+				7445AB1A2186C6B900470E91 /* main.m */,
+				7445AB1C2186C6B900470E91 /* UnderWaterApp.entitlements */,
+			);
+			path = UnderWaterApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		741D4BF82156AB3700CF56EA /* UnderWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741D4C002156AB3700CF56EA /* Build configuration list for PBXNativeTarget "UnderWater" */;
+			buildPhases = (
+				741D4BF52156AB3700CF56EA /* Sources */,
+				741D4BF62156AB3700CF56EA /* Frameworks */,
+				741D4BF72156AB3700CF56EA /* CopyFiles */,
+				7445AADB2186BC3100470E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnderWater;
+			productName = UnderWater;
+			productReference = 741D4BF92156AB3700CF56EA /* UnderWater */;
+			productType = "com.apple.product-type.tool";
+		};
+		7445AB0E2186C6A400470E91 /* UnderWaterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7445AB1D2186C6B900470E91 /* Build configuration list for PBXNativeTarget "UnderWaterApp" */;
+			buildPhases = (
+				7445AB0B2186C6A400470E91 /* Sources */,
+				7445AB0C2186C6A400470E91 /* Frameworks */,
+				7445AB0D2186C6A400470E91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnderWaterApp;
+			productName = UnderWaterApp;
+			productReference = 7445AB0F2186C6A400470E91 /* UnderWaterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741D4BF12156AB3700CF56EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MZ;
+				TargetAttributes = {
+					741D4BF82156AB3700CF56EA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7445AB0E2186C6A400470E91 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 741D4BF42156AB3700CF56EA /* Build configuration list for PBXProject "UnderWater" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 741D4BF02156AB3700CF56EA;
+			productRefGroup = 741D4BFA2156AB3700CF56EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				741D4BF82156AB3700CF56EA /* UnderWater */,
+				7445AB0E2186C6A400470E91 /* UnderWaterApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7445AADB2186BC3100470E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7445AB0A2186C4AF00470E91 /* UnderWater-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7445AB0D2186C6A400470E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7445AB152186C6B800470E91 /* Assets.xcassets in Resources */,
+				7445AB182186C6B900470E91 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		741D4BF52156AB3700CF56EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7435BDDD215979BE00996C2A /* 3dmodel.h in Sources */,
+				7435BDDE215979BE00996C2A /* atlantis.h in Sources */,
+				7435BDDF215979BE00996C2A /* geomutils.h in Sources */,
+				7435BDE0215979BE00996C2A /* Mesh.h in Sources */,
+				741D4C192156ABF800CF56EA /* shark.cpp in Sources */,
+				741D4C132156ABF800CF56EA /* Mesh.mm in Sources */,
+				741D4C1A2156ABF800CF56EA /* tang.cpp in Sources */,
+				741D4C162156ABF800CF56EA /* main.cpp in Sources */,
+				741D4C152156ABF800CF56EA /* geomutils.c in Sources */,
+				741D4C182156ABF800CF56EA /* kumanomi.cpp in Sources */,
+				741D4C172156ABF800CF56EA /* swim.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7445AB0B2186C6A400470E91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7445AB1B2186C6B900470E91 /* main.m in Sources */,
+				7445AB132186C6A400470E91 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7445AB162186C6B900470E91 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7445AB172186C6B900470E91 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		741D4BFE2156AB3700CF56EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		741D4BFF2156AB3700CF56EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		741D4C012156AB3700CF56EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497H3M9522;
+				INFOPLIST_FILE = "$(SRCROOT)/UnderWater/Resources/UnderWater-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		741D4C022156AB3700CF56EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497H3M9522;
+				INFOPLIST_FILE = "$(SRCROOT)/UnderWater/Resources/UnderWater-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7445AB1E2186C6B900470E91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnderWaterApp/UnderWaterApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 497H3M9522;
+				INFOPLIST_FILE = UnderWaterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = MZ.UnderWaterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7445AB1F2186C6B900470E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnderWaterApp/UnderWaterApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 497H3M9522;
+				INFOPLIST_FILE = UnderWaterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = MZ.UnderWaterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		741D4BF42156AB3700CF56EA /* Build configuration list for PBXProject "UnderWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741D4BFE2156AB3700CF56EA /* Debug */,
+				741D4BFF2156AB3700CF56EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741D4C002156AB3700CF56EA /* Build configuration list for PBXNativeTarget "UnderWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741D4C012156AB3700CF56EA /* Debug */,
+				741D4C022156AB3700CF56EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7445AB1D2186C6B900470E91 /* Build configuration list for PBXNativeTarget "UnderWaterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7445AB1E2186C6B900470E91 /* Debug */,
+				7445AB1F2186C6B900470E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 741D4BF12156AB3700CF56EA /* Project object */;
+}
